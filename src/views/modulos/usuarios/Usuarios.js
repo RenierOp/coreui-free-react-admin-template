@@ -71,7 +71,7 @@ export default function Usuarios() {
             </CPaginationItem>
             <CPaginationItem onClick={selectPage}>{firstPage}</CPaginationItem>
             <CPaginationItem disabled>...</CPaginationItem>
-            {offset == lastPage ? (
+            {offset === lastPage ? (
               <CPaginationItem onClick={selectPage}>{offset - 2}</CPaginationItem>
             ) : (
               ''
@@ -80,7 +80,7 @@ export default function Usuarios() {
             <CPaginationItem active>{offset}</CPaginationItem>
             {offset >= lastPage - 1 ? (
               <>
-                {offset == lastPage ? (
+                {offset === lastPage ? (
                   <CPaginationItem aria-label="Next" onClick={nextPage} disabled>
                     <span aria-hidden="true">&raquo;</span>
                   </CPaginationItem>
@@ -106,7 +106,7 @@ export default function Usuarios() {
           </>
         ) : (
           <>
-            <CPaginationItem aria-label="Previous" onClick={previousPage} disabled={offset == 1}>
+            <CPaginationItem aria-label="Previous" onClick={previousPage} disabled={offset === 1}>
               <span aria-hidden="true">&laquo;</span>
             </CPaginationItem>
             {offset > 2 ? <CPaginationItem onClick={selectPage}>{offset - 2}</CPaginationItem> : ''}
