@@ -50,7 +50,7 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
-const Usuarios = React.lazy(() => import('./views/modulos/usuarios/Usuarios'))
+const Usuarios = React.lazy(() => import('./views/modulos/usuarios/ShowUsuarios'))
 const UserRoles = React.lazy(() => import('./views/modulos/usuarios/UserRoles'))
 
 const routes = [
